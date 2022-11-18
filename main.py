@@ -26,3 +26,9 @@ def pe():
       if na == '0':
             print(res)
 
+cur.execute('SELECT rowid, name, price, number FROM productss')
+connection.commit()
+res = cur.fetchall()
+pe()
+
+connection.close()
